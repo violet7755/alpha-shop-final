@@ -1,0 +1,83 @@
+.stepperPanel {
+  height: 100px;
+  width: 540px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  .progressTitle {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  span {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+  }
+
+  .stepperContainer {
+    display: flex;
+    height: 492px;
+    margin-top: 45px;
+  }
+
+  .step {
+    flex: 1;
+    text-align: center;
+
+    .circleContainer {
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      border: 1px solid #afb1db;
+      border-radius: 50%;
+      color: #afb1db;
+      margin-right: 8px;
+      text-align: center;
+    }
+
+    .circleContainerActive {
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      border: 1px solid black;
+      border-radius: 50%;
+      color: white;
+      margin-right: 8px;
+      text-align: center;
+      background-color: black;
+    }
+
+    .labelContainer {
+      color: #afb1db;
+    }
+    .labelContainerActive {
+      color: black;
+    }
+
+    &:not(:first-child) {
+      margin-left: 124px;
+      background: transparent;
+    }
+
+    .connectLine {
+      display: block;
+      height: 2px;
+      background-color: #afb1db;
+      position: absolute;
+      top: 12px;
+      right: calc(100% + 30px);
+      left: calc(-100% + 10px);
+    }
+    .connectLineActive {
+      display: block;
+      height: 2px;
+      background-color: black;
+      position: absolute;
+      top: 12px;
+      right: calc(100% + 30px);
+      left: calc(-100% + 10px);
+    }
+  }
+}

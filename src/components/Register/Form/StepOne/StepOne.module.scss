@@ -1,0 +1,82 @@
+.stepOne {
+  height: 400px;
+  width: 540px;
+  padding-top: 40px;
+
+  .stepOneTitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 12px;
+  }
+
+  .stepOneContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input,
+  select {
+    height: 40px;
+    border: solid 1px gray;
+    border-radius: 3px;
+    width: 100%;
+    margin: 5px 0;
+    color: gray;
+    padding: 10px;
+    &:hover,
+    &:focus {
+      border-color: black;
+    }
+  }
+
+  .inputLabel {
+    margin: 5px 0px;
+    color: gray;
+    font-size: 12px;
+  }
+
+  .group {
+    display: grid;
+    width: 100%;
+    padding-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 40px;
+  }
+
+  .groupTitle,
+  .groupCity {
+    grid-column: 1/3;
+  }
+  .groupEmail {
+    grid-column: 4/7;
+  }
+  .groupName,
+  .groupAddress {
+    grid-column: 3/7;
+  }
+  .groupPhone {
+    grid-column: 1/4;
+  }
+  .selectWrapper {
+    position: relative;
+    z-index: 0;
+
+    select {
+      appearance: none;
+      cursor: pointer;
+      background-color: transparent;
+    }
+    &::after {
+      content: "";
+      border-style: solid;
+      border-width: 6px 5px 0 5px;
+      border-color: gray transparent transparent transparent;
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  }
+}

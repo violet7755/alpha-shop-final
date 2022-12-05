@@ -1,0 +1,38 @@
+.cartSection {
+  width: 440px;
+  height: 492px;
+  margin-top: 200px;
+  margin-left: 165px;
+  border: 1px solid #f0f0f5;
+  border-radius: 2%;
+
+  .cartTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 32px 24px;
+  }
+
+  .shippingFee,
+  .totalFee {
+    display: flex;
+    width: 392px;
+    margin: 30px 24px;
+    justify-content: space-between;
+    text-align: center;
+    border-top: 1px solid #f0f0f5;
+    border-width: 392 px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 18px;
+  }
+  .price {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    padding-top: 18px;
+  }
+}
